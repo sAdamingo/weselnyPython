@@ -5,7 +5,6 @@ def read_content_from_file(filename):
     stream = open(filename, 'r', encoding='utf-8')
     try:
         content = stream.read()
-    # print(100/0)
     finally:
         stream.close()
     return content
