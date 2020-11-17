@@ -10,7 +10,7 @@ def read_content_from_file(filename):
     return content
 
 
-def get_longest_sentence(text):
+def longest_sentence_in_text_info(text):
     sentences = text.split(sep=".")
     print("\nYour longest sentence is:\n", max(sentences, key=len))
 
@@ -35,4 +35,4 @@ def get_number_of_occurrences_of_each_word(text):
 if __name__ == '__main__':
     x = read_content_from_file("../whatever.txt")
     get_number_of_occurrences_of_each_word(x)
-    get_longest_sentence(x)
+    longest_sentence_in_text_info(x)
